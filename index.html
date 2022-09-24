@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Typing</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fir.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 style="font-size:xx-large;">Typing test speed</h2>
+
+        <div class="content" id="fir-cont">
+            
+            <lord-icon src="https://cdn.lordicon.com/shiwicyv.json" trigger="morph"
+                colors="primary:#4bb3fd,secondary:#ffc738,tertiary:#ebe6ef" style="width:350px;height:300px">
+            </lord-icon>
+            <p class="play-now"> Choose the level for typing </p>
+
+            <div class="buttons">
+                <button class=" play-ch left" id="easy">Easy</button>
+                <button class=" play-ch mx-auto" id="medium">Medium</button>
+                <button class=" play-ch right" id="hard">Hard</button>
+            </div>
+        </div>
+
+        <div class="content hide" id="main-cont">
+
+            <div class="details">
+                <p class="time">Time Left : <span><b>0</b>s</span></p>
+                <p class="score">Score : <span></span></p>
+            </div>
+            <p class="word"></p>
+            <input type="text" spellcheck="false" placeholder="Enter a valid word">
+            <div class="buttons">
+
+                <button class="end mx-auto">End Now</button>
+            </div>
+            <div class="message hide">
+                <p class="message-show"></p>
+            </div>
+        </div>
+        <div class="content endPage hide" id="cont">
+            <lord-icon src="https://cdn.lordicon.com/tqywkdcz.json" trigger="loop"
+                colors="primary:#4bb3fd,secondary:#f28ba8,tertiary:#ffc738,quaternary:#f24c00"
+                style="width:180px;height:180px">
+            </lord-icon>
+            <p class="f-score">Your Score is : <span></span></p>
+            <div class="buttons">
+
+                <button class=" play mx-auto" id="play-again">Play Again
+                    <lord-icon src="https://cdn.lordicon.com/nrvilcob.json" trigger="loop"
+                        colors="primary:#3a3347,secondary:#f24c00,tertiary:#646e78">
+                    </lord-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <script src="js/word.js"></script>
+    <script src="js/fir.js"></script>
+
+</body>
+
+</html>
